@@ -359,6 +359,7 @@ small.text-muted {
 
 .featured-dropdown .noti-list {
     padding: 0;
+    visibility: hidden;
 }
 
 .noti-list .noti-text {
@@ -603,7 +604,11 @@ small.text-muted {
     transition: visibility 0s linear .3s,opacity .3s linear;
 }
 
-.navbar-nav .featured-dropdown:hover {
+.navbar-nav .finding-dropdown:hover {
+    visibility: visible;
+}
+
+.finding-dropdown:hover .noti-list{
     visibility: visible;
 }
 
@@ -663,7 +668,7 @@ small.text-muted {
 /* login page */
 
 .login-title, .signup-title {
-    margin-top: 50%;
+    margin-top: 30%;
 }
 
 .form-signin, .form-signup {
